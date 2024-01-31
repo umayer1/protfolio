@@ -7,11 +7,19 @@
 
 body{
     font-family: 'Poppins', sans-serif;
-    background-image: url(image/bg.jpeg);
-    background-size: cover;
-    background-position: center;
+ 
 }
 
+.clear{
+  clear: both;
+}
+
+.main-section{
+    background-image: url(image/1bg.jpeg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
 
 html{
     scroll-behavior: smooth;
@@ -19,7 +27,7 @@ html{
 
 h1{
     font-size: 3rem;
-    color: whitesmoke;
+   
     padding-top: 40px;
 }
 
@@ -30,7 +38,7 @@ h3{
 }
 
 p{
-    color: whitesmoke;
+   font-weight: bolder;
     padding: 10px;
     font-size: 0.9rem;
 }
@@ -76,4 +84,42 @@ p{
 
 .btn:hover{
     box-shadow: 1px 2px 4px whitesmoke;
+}
+
+
+
+
+
+/* scend sec */
+.secend-sec{
+    width: 100%;
+    background-image: url(image/sc\ bg.jpeg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    margin-bottom: 30px;
+}
+
+.image2{
+    height: 350px;
+    border-radius: 50%;
+    border: 1px solid black;
+}
+
+.haif-div{
+    width: 50%;
+}
+
+
+.secend-haif-div{
+ padding-left: 40px;
+}
+
+.color-heder{
+    color: orange;
+    padding-bottom: 30px;
+}
+
+#header-span{
+  color: teal;
 }
