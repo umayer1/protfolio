@@ -1,3 +1,11 @@
+:root{
+    --all-width: 50%;
+    --primary-color: #fff;
+    --box-shadow: 10px 10px 40px gray ;
+    --padding: 0px 20px;
+}
+
+
 *{
     margin: 0;
     padding: 0;
@@ -14,12 +22,62 @@ body{
   clear: both;
 }
 
-.main-section{
-    background-image: url(image/1bg.jpeg);
+
+.hr{
+    background-color: black;
+    height: 2px;
+}
+
+/* nvbar starts hear */
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav ul{
+    display: flex;
+}
+
+nav ul li{
+    padding: 0 30px;
+}
+
+nav ul li a{
+    color: black;
+    font-weight: bolder;
+}
+
+nav ul li a:hover{
+    border-bottom: 2px solid #fF7200;
+    
+}
+
+#C1:hover{
+    color: #fff;
+}
+
+nav h1{
+    color: #fF7200;
+    font-size: 3.5rem;
+    font-family: 'Rubik Glitch Pop', system-ui;
+}
+
+/* navbar nds hear */
+
+
+/* prents starts hear */
+.prents{
+    background-image: url(image/sc\ bg.jpeg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 }
+
+/* prents ends hear */
+
+/* main section starts hear */
+
 
 html{
     scroll-behavior: smooth;
@@ -30,14 +88,13 @@ h1{
    
     padding-top: 40px;
 }
-
-h3{
-    color: #fff;
+.info h3{
+    color:teal;
     font-size: 1.5rem;
     padding-top: 15px;
 }
 
-p{
+.info-pare{
    font-weight: bolder;
     padding: 10px;
     font-size: 0.9rem;
@@ -54,7 +111,7 @@ p{
 }
 
 .info{
-    width: 50%;
+    width: var(--all-width);
 }
 
 .main-section{
@@ -63,7 +120,7 @@ p{
 }
 
 .img{
-    width: 50%;
+    width: var(--all-width);
    
    padding-left: 2%; 
 }
@@ -86,16 +143,13 @@ p{
     box-shadow: 1px 2px 4px whitesmoke;
 }
 
+/* main section ends hear */
 
 
 
-
-/* scend sec */
+/* scend sec starts hear */
 .secend-sec{
     width: 100%;
-    background-image: url(image/sc\ bg.jpeg);
-    background-size: cover;
-    background-position: center;
     display: flex;
     margin-bottom: 30px;
 }
@@ -107,7 +161,7 @@ p{
 }
 
 .haif-div{
-    width: 50%;
+    width: var(--all-width);
 }
 
 
@@ -122,4 +176,74 @@ p{
 
 #header-span{
   color: teal;
+}
+
+/* secend sec ends hear */
+
+
+
+/* three section starts hear */
+
+.three-section{
+    width: 100%;
+    height: 100vh;
+    background-image: url(image/three\ bg.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 10px 0 0 0;
+}
+
+.chile-div{
+    display: flex;
+}
+
+.first-grid-div{
+    width: 40%;
+    margin: 0 5% 0 5%;
+    padding: 20px;
+    box-shadow: var(--box-shadow);
+    border-left: 7px solid;
+    border-image: linear-gradient(#ff8400e2, #e1a10b);
+    border-image-slice: 1;
+}
+
+.first-grid-div h2{
+    font-size: 2.2rem;
+    padding-bottom: 20px;
+}
+
+.first-grid-div h3{
+    color: orange;
+}
+
+.secend-grid-div{
+    width: 40%;
+    margin: 0 5% 0 5%;
+    padding: 20px;
+    box-shadow: var(--box-shadow);
+    border-left: 7px solid;
+    border-image: linear-gradient(blue, cyan);
+    border-image-slice: 1;
+}
+
+.secend-grid-div h2{
+    font-size: 2.2rem;
+    padding-bottom: 20px ;
+} 
+
+.secend-grid-div h3{
+    color:orange;
+}
+
+
+/* three section ends hear */
+
+
+
+/* footer starts hear */
+
+.footer{
+    width: 100%;
+    
+    text-align: center;
 }
